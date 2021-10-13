@@ -1,0 +1,278 @@
+{
+  "lastUpdate": 1634135386647,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "76de51333dc87e5b1c0db18b5691338279346eb7",
+          "message": "fix(es/transforms): Fix for react + typescript (#2422)\n\nswc_common:\r\n - Add `NoopComments`.\r\n - Implement `Comments` for `Option<C>` where C: `Comments`.\r\n - Add some helper methods to `Comments`.\r\n - Deprecate `CommentsExt`.\r\n\r\nswc_ecma_transforms_base:\r\n - `resolver`: Handle `TsImportEqualsDecl`.\r\n\r\nswc_ecma_transforms_react:\r\n - Reduce useless cloning using `Arc`.\r\n - Expose API for parsing directives like `@jsxPragma`.\r\n\r\nswc_ecma_transforms_typescript:\r\n - Accept `pragma` and `pragmaFrag`.\r\n - Support jsx directives.\r\n - Preserve jsx-related imports.\r\n\r\nswc:\r\n - Optimize `SwcComments`.\r\n - Run`resolver` before everything else.",
+          "timestamp": "2021-10-13T22:29:56+09:00",
+          "tree_id": "c5ad90cac0cff0ea3331cab598cfca4b899069e8",
+          "url": "https://github.com/swc-project/swc/commit/76de51333dc87e5b1c0db18b5691338279346eb7"
+        },
+        "date": 1634135386642,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "base_tr_fixer",
+            "value": 93883,
+            "range": "± 5977",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_tr_resolver_and_hygiene",
+            "value": 270846,
+            "range": "± 47683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2015",
+            "value": 171672,
+            "range": "± 10628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2016",
+            "value": 171478,
+            "range": "± 15060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2017",
+            "value": 175979,
+            "range": "± 21722",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2018",
+            "value": 170519,
+            "range": "± 20434",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2019",
+            "value": 175681,
+            "range": "± 11872",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2020",
+            "value": 173048,
+            "range": "± 15949",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es3",
+            "value": 177390,
+            "range": "± 29800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es5",
+            "value": 172752,
+            "range": "± 23223",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "config_for_file",
+            "value": 20770,
+            "range": "± 6419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2015",
+            "value": 353131138,
+            "range": "± 29773482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 213747098,
+            "range": "± 26363229",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 211544048,
+            "range": "± 21623600",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 209010557,
+            "range": "± 21727253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 204867418,
+            "range": "± 22220951",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 203540542,
+            "range": "± 28602822",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 389855021,
+            "range": "± 33159348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 352748468,
+            "range": "± 37837325",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 829443,
+            "range": "± 83824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2015",
+            "value": 2137392,
+            "range": "± 135578",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2016",
+            "value": 986372,
+            "range": "± 127345",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2017",
+            "value": 971608,
+            "range": "± 118861",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2018",
+            "value": 958157,
+            "range": "± 108003",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2019",
+            "value": 929198,
+            "range": "± 78169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2020",
+            "value": 917791,
+            "range": "± 108090",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es3",
+            "value": 2468837,
+            "range": "± 326186",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es5",
+            "value": 2166597,
+            "range": "± 201395",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_ast_node",
+            "value": 185,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_serde",
+            "value": 205,
+            "range": "± 12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_colors",
+            "value": 16390661,
+            "range": "± 22794959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_large",
+            "value": 85124909,
+            "range": "± 108109201",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_clone",
+            "value": 3419477,
+            "range": "± 1487643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span",
+            "value": 6195750,
+            "range": "± 1910600",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span_panic",
+            "value": 6413662,
+            "range": "± 1440288",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span",
+            "value": 4265071,
+            "range": "± 1491257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span_panic",
+            "value": 3787814,
+            "range": "± 651593",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed",
+            "value": 178,
+            "range": "± 16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed_clone",
+            "value": 84,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed",
+            "value": 167,
+            "range": "± 19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed_clone",
+            "value": 83,
+            "range": "± 10",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
