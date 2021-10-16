@@ -1,0 +1,278 @@
+{
+  "lastUpdate": 1634375124566,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1645bb30b70f84898d1e5b1ab29c02f031628e5d",
+          "message": "perf(es/transforms): Reduce usage of `#[fast_path]` (#2442)\n\nswc_ecma_ast:\r\n - Implement `Take` for `ObjectLit`.\r\n - Implement `Take` for `ArrayLit`.\r\n\r\nswc_ecma_transforms_compat:\r\n - `nullish_coalescing`: Remove exponential visit.\r\n - `nullish_coalescing`: Migrate to `VisitMut`.\r\n - `optional_chaining`: Reduce exponential visit. (But it's not removed)\r\n - `class_properties`: Remove exponential visit.\r\n - `jsx_src`: Migrate to `VisitMut`.\r\n - `optional_chaining`: Mae it parallel.\r\n - `async_to_generator`: Remove `#[fast_path]`.\r\n - `arrow`: Remove `#[fast_path]`.\r\n - `destructuring`: Remove `#[fast_path]`.\r\n - `block_scoped_functions`:  Remove `#[fast_path]`.\r\n - `classes`: Remove `#[fast_path]`.",
+          "timestamp": "2021-10-16T08:12:02Z",
+          "tree_id": "d921e3e1741a10f5e37763895f71bcd7b8448b4c",
+          "url": "https://github.com/swc-project/swc/commit/1645bb30b70f84898d1e5b1ab29c02f031628e5d"
+        },
+        "date": 1634375124565,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "base_tr_fixer",
+            "value": 26916,
+            "range": "± 1410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_tr_resolver_and_hygiene",
+            "value": 105818,
+            "range": "± 10122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2015",
+            "value": 59069,
+            "range": "± 9212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2016",
+            "value": 56133,
+            "range": "± 9086",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2017",
+            "value": 55329,
+            "range": "± 9608",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2018",
+            "value": 57248,
+            "range": "± 9367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2019",
+            "value": 56628,
+            "range": "± 7678",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2020",
+            "value": 56523,
+            "range": "± 8419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es3",
+            "value": 55204,
+            "range": "± 8340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es5",
+            "value": 60026,
+            "range": "± 7310",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "config_for_file",
+            "value": 15191,
+            "range": "± 6212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2015",
+            "value": 208175852,
+            "range": "± 9546543",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 156515866,
+            "range": "± 8782358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 168097204,
+            "range": "± 13156537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 158593649,
+            "range": "± 11020413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 157146050,
+            "range": "± 12055318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 156032624,
+            "range": "± 10442098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 254857648,
+            "range": "± 32109583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 239202142,
+            "range": "± 30552683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 701834,
+            "range": "± 112935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2015",
+            "value": 1428113,
+            "range": "± 280984",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2016",
+            "value": 677117,
+            "range": "± 118455",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2017",
+            "value": 701579,
+            "range": "± 139102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2018",
+            "value": 616510,
+            "range": "± 68504",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2019",
+            "value": 583478,
+            "range": "± 87312",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es2020",
+            "value": 581422,
+            "range": "± 93927",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es3",
+            "value": 1526732,
+            "range": "± 274840",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "transforms_es5",
+            "value": 1452987,
+            "range": "± 267645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_ast_node",
+            "value": 164,
+            "range": "± 22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_serde",
+            "value": 169,
+            "range": "± 24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_colors",
+            "value": 15569008,
+            "range": "± 23422066",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_large",
+            "value": 102021169,
+            "range": "± 156862104",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_clone",
+            "value": 2479694,
+            "range": "± 378643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span",
+            "value": 4217773,
+            "range": "± 519285",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span_panic",
+            "value": 4571338,
+            "range": "± 631046",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span",
+            "value": 3027138,
+            "range": "± 371062",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span_panic",
+            "value": 3056273,
+            "range": "± 392910",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed",
+            "value": 162,
+            "range": "± 19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed_clone",
+            "value": 81,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed",
+            "value": 147,
+            "range": "± 16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed_clone",
+            "value": 69,
+            "range": "± 11",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
