@@ -1,0 +1,290 @@
+{
+  "lastUpdate": 1638248539250,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "028d0ce2c6e275f7b9ca1652c60fa18c1a10c667",
+          "message": "fix(es/transforms/compat): Fix block scoping (#2916)\n\nswc_ecma_transforms_compat:\r\n - `block_scoping`: Track if we are in nested loops.\r\n - `block_scoping`: Don't treat `break` nor `continue` in nested loops as leaper. (https://github.com/vercel/next.js/issues/31757, Closes #2799, Closes #2915)\r\n - `block_scoping`: Don't recurse into nested loops while looking for functions. (Closes #2622)",
+          "timestamp": "2021-11-30T13:11:09+09:00",
+          "tree_id": "6957cd196db60f70e6678dec1042258daf935e6c",
+          "url": "https://github.com/swc-project/swc/commit/028d0ce2c6e275f7b9ca1652c60fa18c1a10c667"
+        },
+        "date": 1638248539249,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "base_tr_fixer",
+            "value": 25549,
+            "range": "± 2288",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_tr_resolver_and_hygiene",
+            "value": 156391,
+            "range": "± 11914",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2015",
+            "value": 58224,
+            "range": "± 5363",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2016",
+            "value": 56387,
+            "range": "± 13775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2017",
+            "value": 59270,
+            "range": "± 5998",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2018",
+            "value": 57604,
+            "range": "± 4603",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2019",
+            "value": 59627,
+            "range": "± 5093",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2020",
+            "value": 58763,
+            "range": "± 4012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es3",
+            "value": 57589,
+            "range": "± 5438",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es5",
+            "value": 59186,
+            "range": "± 5620",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2015",
+            "value": 203272461,
+            "range": "± 13445180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 166720190,
+            "range": "± 12917291",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 172793804,
+            "range": "± 8730481",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 170826603,
+            "range": "± 10976370",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 170808879,
+            "range": "± 12256751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 167974141,
+            "range": "± 10435754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 238566509,
+            "range": "± 18931466",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 219160850,
+            "range": "± 18653659",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 761678,
+            "range": "± 71072",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_ast_node",
+            "value": 167,
+            "range": "± 19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_serde",
+            "value": 171,
+            "range": "± 18",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_colors",
+            "value": 5092563,
+            "range": "± 3869915",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_large",
+            "value": 124652448,
+            "range": "± 183307347",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_clone",
+            "value": 2683281,
+            "range": "± 163463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span",
+            "value": 4333699,
+            "range": "± 457838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span_panic",
+            "value": 4468267,
+            "range": "± 453939",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span",
+            "value": 3264143,
+            "range": "± 315673",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span_panic",
+            "value": 3282904,
+            "range": "± 256781",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ast_clone",
+            "value": 19310,
+            "range": "± 2170",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ast_clone_to_stable",
+            "value": 58268,
+            "range": "± 5914",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ast_clone_to_stable_then_to_unstable",
+            "value": 107257,
+            "range": "± 10923",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "json_deserialize",
+            "value": 2175393,
+            "range": "± 226826",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "json_serialize",
+            "value": 106174,
+            "range": "± 13749",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed",
+            "value": 134,
+            "range": "± 12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed_clone",
+            "value": 74,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed",
+            "value": 125,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed_clone",
+            "value": 69,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_10",
+            "value": 352,
+            "range": "± 39",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_15",
+            "value": 764,
+            "range": "± 107",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_20",
+            "value": 1367,
+            "range": "± 77",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_40",
+            "value": 4828,
+            "range": "± 339",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_5",
+            "value": 120,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_60",
+            "value": 10279,
+            "range": "± 333",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
