@@ -1,290 +1,8 @@
 {
-  "lastUpdate": 1640700146582,
+  "lastUpdate": 1640700207170,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6b96a3d8ed2bc9c55fdc07d22257800d27e7a160",
-          "message": "feat: Enable logging of timings (#2833)\n\nswc_timer:\r\n - Add `Timer`.\r\n - Add `timer!()`.\r\n\r\nnode:\r\n - Enable logging.",
-          "timestamp": "2021-11-22T21:01:08+09:00",
-          "tree_id": "621513ec3f476d86c9113d705a35dda6c17fc9f0",
-          "url": "https://github.com/swc-project/swc/commit/6b96a3d8ed2bc9c55fdc07d22257800d27e7a160"
-        },
-        "date": 1637586230103,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "base_tr_fixer",
-            "value": 35291,
-            "range": "± 3524",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "base_tr_resolver_and_hygiene",
-            "value": 191576,
-            "range": "± 22584",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2015",
-            "value": 69050,
-            "range": "± 5816",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2016",
-            "value": 67620,
-            "range": "± 29144",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2017",
-            "value": 68678,
-            "range": "± 6740",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2018",
-            "value": 70013,
-            "range": "± 10229",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2019",
-            "value": 68131,
-            "range": "± 8642",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2020",
-            "value": 68552,
-            "range": "± 3733",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es3",
-            "value": 67941,
-            "range": "± 8263",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es5",
-            "value": 69061,
-            "range": "± 11251",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2015",
-            "value": 230210543,
-            "range": "± 21458122",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 181635178,
-            "range": "± 16002264",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 197187416,
-            "range": "± 21187732",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 197281135,
-            "range": "± 24473683",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 198523715,
-            "range": "± 17734772",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 191267197,
-            "range": "± 15007658",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 281776434,
-            "range": "± 28998026",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 244002578,
-            "range": "± 22666860",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 849568,
-            "range": "± 197796",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ser_ast_node",
-            "value": 198,
-            "range": "± 22",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ser_serde",
-            "value": 203,
-            "range": "± 35",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "emit_colors",
-            "value": 15024527,
-            "range": "± 22550346",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "emit_large",
-            "value": 96972513,
-            "range": "± 158880498",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "base_clone",
-            "value": 3176542,
-            "range": "± 899948",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "fold_span",
-            "value": 5395884,
-            "range": "± 1320799",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "fold_span_panic",
-            "value": 5381519,
-            "range": "± 820086",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "visit_mut_span",
-            "value": 3617859,
-            "range": "± 792236",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "visit_mut_span_panic",
-            "value": 3737909,
-            "range": "± 885844",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ast_clone",
-            "value": 24535,
-            "range": "± 2756",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ast_clone_to_stable",
-            "value": 77142,
-            "range": "± 8431",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ast_clone_to_stable_then_to_unstable",
-            "value": 135203,
-            "range": "± 13498",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "json_deserialize",
-            "value": 2666570,
-            "range": "± 574406",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "json_serialize",
-            "value": 119666,
-            "range": "± 20841",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_boxed",
-            "value": 184,
-            "range": "± 21",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_boxed_clone",
-            "value": 82,
-            "range": "± 14",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_unboxed",
-            "value": 165,
-            "range": "± 30",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_unboxed_clone",
-            "value": 79,
-            "range": "± 12",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_10",
-            "value": 381,
-            "range": "± 30",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_15",
-            "value": 792,
-            "range": "± 110",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_20",
-            "value": 1475,
-            "range": "± 190",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_40",
-            "value": 5475,
-            "range": "± 846",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_5",
-            "value": 128,
-            "range": "± 9",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_60",
-            "value": 11415,
-            "range": "± 1515",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -41735,6 +41453,84 @@
             "name": "parser                      ",
             "value": 745800,
             "range": "± 94617",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austaras@outlook.com",
+            "name": "Austaras",
+            "username": "Austaras"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f8f04e031e218393abd8ae5ca6469484b0fe90d3",
+          "message": "refactor(es/react/fast-refresh): Use `VisitMut` (#3129)",
+          "timestamp": "2021-12-28T22:26:59+09:00",
+          "tree_id": "d7edd004264bb20febd589987ace26246802b991",
+          "url": "https://github.com/swc-project/swc/commit/f8f04e031e218393abd8ae5ca6469484b0fe90d3"
+        },
+        "date": 1640700207155,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015                 ",
+            "value": 185136012,
+            "range": "± 7374176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016                 ",
+            "value": 153305657,
+            "range": "± 4848528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017                 ",
+            "value": 158354321,
+            "range": "± 7445420",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018                 ",
+            "value": 157893954,
+            "range": "± 9516244",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019                 ",
+            "value": 156143859,
+            "range": "± 12352226",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020                 ",
+            "value": 155597312,
+            "range": "± 7307637",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3                    ",
+            "value": 215646993,
+            "range": "± 9016267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5                    ",
+            "value": 196910876,
+            "range": "± 10439928",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser                      ",
+            "value": 685325,
+            "range": "± 18915",
             "unit": "ns/iter"
           }
         ]
