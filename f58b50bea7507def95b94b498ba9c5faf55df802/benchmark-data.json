@@ -1,0 +1,86 @@
+{
+  "lastUpdate": 1641825013618,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "austaras@outlook.com",
+            "name": "Austaras",
+            "username": "Austaras"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f58b50bea7507def95b94b498ba9c5faf55df802",
+          "message": "refactor(es/ast): Change types of member-like expressions (#3178)\n\nswc_ecma_ast:\r\n - Split `MemberExpr` into `MemberExpr` and `SuperPropExpr`.\r\n - Use `Box<Expr>` for `MemberExpr.obj`.\r\n - Use ad-hoc type for `MemberExpr.prop`.\r\n - Use ad-hoc type for `SuperPropExpr.prop`.\r\n - Use `Callee` instead of  `ExprOrSpread` for `CallExpr`.\r\n - Simplify types for meta property expressions.",
+          "timestamp": "2022-01-10T13:54:42Z",
+          "tree_id": "05da8d7c8bda671f1716ac8f69c5663b25eba694",
+          "url": "https://github.com/swc-project/swc/commit/f58b50bea7507def95b94b498ba9c5faf55df802"
+        },
+        "date": 1641825013617,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 188417051,
+            "range": "± 20456558",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 140933649,
+            "range": "± 26644413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 158017714,
+            "range": "± 18007480",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 145671623,
+            "range": "± 30293216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 145884678,
+            "range": "± 22005435",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 156496121,
+            "range": "± 15483528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 206700300,
+            "range": "± 33247790",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 200171884,
+            "range": "± 13234249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 688779,
+            "range": "± 25774",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
