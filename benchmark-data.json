@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1642494642595,
+  "lastUpdate": 1642509302557,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c415487bb91f466948c2279030f3643049ad395a",
-          "message": "fix(es/codegen): Fix sourcemap bug related to multi-line comments (#3023)\n\nswc_ecma_codegen:\r\n - Compute line starts in multi-line comments.",
-          "timestamp": "2021-12-13T09:21:22+09:00",
-          "tree_id": "49c31891d8245249ec0e3d70e251874b5032b243",
-          "url": "https://github.com/swc-project/swc/commit/c415487bb91f466948c2279030f3643049ad395a"
-        },
-        "date": 1639357615959,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 223829114,
-            "range": "± 12159192",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 182644678,
-            "range": "± 8944622",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 188723757,
-            "range": "± 9133409",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 187124492,
-            "range": "± 12972671",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 185692900,
-            "range": "± 11881472",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 184100474,
-            "range": "± 15808242",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 273425664,
-            "range": "± 24140481",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 241784090,
-            "range": "± 16363652",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 906267,
-            "range": "± 130646",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 687383,
             "range": "± 24885",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e796cdc0ac59d7cab7e9e845afc2f98ee89c3ae",
+          "message": "fix(es/minifier): Don't emit invalid code (#3302)\n\nswc_ecma_minifier:\r\n - Add lots of debug assertions for invalid codes.\r\n - Remove all invalid AST nodes eagerly.\r\n - `pure`: Normalize `PatOrExpr`.\r\n - `analyzer`: Handle `PatOrExpr` correctly.",
+          "timestamp": "2022-01-18T20:52:21+09:00",
+          "tree_id": "2a21736136cbfbc3c54af31218ba02580d3acdb2",
+          "url": "https://github.com/swc-project/swc/commit/8e796cdc0ac59d7cab7e9e845afc2f98ee89c3ae"
+        },
+        "date": 1642509302548,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 182327784,
+            "range": "± 26160896",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 189818801,
+            "range": "± 33825861",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 193369213,
+            "range": "± 41913193",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 190448583,
+            "range": "± 25979202",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 175662862,
+            "range": "± 24426243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 171258209,
+            "range": "± 29091281",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 238073314,
+            "range": "± 37378537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 240266595,
+            "range": "± 47553290",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 718753,
+            "range": "± 151723",
             "unit": "ns/iter"
           }
         ]
