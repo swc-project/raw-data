@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1642644566082,
+  "lastUpdate": 1642647795608,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "61e9b5f84115ded8c5361e6674d10e5826fd1635",
-          "message": "fix(es/lexer): Don't report lexer errors while backtracking (#3051)\n\nswc_ecma_parser:\r\n - Share backtracking state with the lexer.\r\n - Don't report lexing errors while backtracking (Closes #2896)",
-          "timestamp": "2021-12-16T19:57:19+09:00",
-          "tree_id": "b3e9b215ed54a2569b2361601d950fae46c54f29",
-          "url": "https://github.com/swc-project/swc/commit/61e9b5f84115ded8c5361e6674d10e5826fd1635"
-        },
-        "date": 1639655033210,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 220485499,
-            "range": "± 20179623",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 180438286,
-            "range": "± 17502778",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 182180932,
-            "range": "± 22987329",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 184136425,
-            "range": "± 18729223",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 180502679,
-            "range": "± 17213598",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 181880443,
-            "range": "± 14775586",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 266355429,
-            "range": "± 22581005",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 229689096,
-            "range": "± 22355367",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 882677,
-            "range": "± 99900",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 632045,
             "range": "± 23756",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9608605772351a2406870e19ed8738adf2147374",
+          "message": "build(node-swc): Fix GLIBC < 2.18 compatible issues and android arm binary loading issue (#3314)",
+          "timestamp": "2022-01-20T02:21:24Z",
+          "tree_id": "d7f3cd4ada40e11e358c91b28ffe9125cb8d2e4c",
+          "url": "https://github.com/swc-project/swc/commit/9608605772351a2406870e19ed8738adf2147374"
+        },
+        "date": 1642647795599,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 193171910,
+            "range": "± 18744543",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 198602901,
+            "range": "± 12191091",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 191769090,
+            "range": "± 13170931",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 193951208,
+            "range": "± 11266896",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 191165111,
+            "range": "± 13377340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 172281566,
+            "range": "± 7082716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 242005170,
+            "range": "± 8241723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 242059975,
+            "range": "± 14254810",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 803548,
+            "range": "± 38339",
             "unit": "ns/iter"
           }
         ]
