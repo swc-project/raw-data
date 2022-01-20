@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1642647795608,
+  "lastUpdate": 1642649737988,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b4d95b44a7465941e58ec66a13c800e00409b188",
-          "message": "perf(es/parser): Improve performance (#3059)\n\nswc_common:\r\n - Optimize `StringInput`.\r\n\r\nswc_ecma_parser:\r\n - Optimize `skip_space`.\r\n - Remove useless `.clone()`.",
-          "timestamp": "2021-12-19T00:18:00+09:00",
-          "tree_id": "d334ac051f4809a702dbbaf907a9c5770dc92ec9",
-          "url": "https://github.com/swc-project/swc/commit/b4d95b44a7465941e58ec66a13c800e00409b188"
-        },
-        "date": 1639843128929,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 192033722,
-            "range": "± 9742810",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 158552118,
-            "range": "± 14285908",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 159668419,
-            "range": "± 10622217",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 159352351,
-            "range": "± 13534264",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 160911620,
-            "range": "± 16650829",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 157620872,
-            "range": "± 11132767",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 221094360,
-            "range": "± 24057029",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 203013462,
-            "range": "± 11155784",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 764403,
-            "range": "± 99845",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 803548,
             "range": "± 38339",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "4567934+alexander-akait@users.noreply.github.com",
+            "name": "Alexander Akait",
+            "username": "alexander-akait"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0723ee282861a1e648490989c122d5f4e683dc35",
+          "message": "fix(css): Fix parsing of media queries (#3318)\n\nCo-authored-by: Donny/강동윤 <kdy1997.dev@gmail.com>",
+          "timestamp": "2022-01-20T02:57:24Z",
+          "tree_id": "ff8a61aae1278f922db544fcca49b55430b4a009",
+          "url": "https://github.com/swc-project/swc/commit/0723ee282861a1e648490989c122d5f4e683dc35"
+        },
+        "date": 1642649737979,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 172205087,
+            "range": "± 7837870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 180034442,
+            "range": "± 9049328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 180381427,
+            "range": "± 9176881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 179275835,
+            "range": "± 8190309",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 178369842,
+            "range": "± 9849848",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 159266811,
+            "range": "± 6294421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 219505305,
+            "range": "± 7162202",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 222975072,
+            "range": "± 10802043",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 735248,
+            "range": "± 24557",
             "unit": "ns/iter"
           }
         ]
