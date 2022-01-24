@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1643029621676,
+  "lastUpdate": 1643032195328,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ba2563f59ed819e67a56e39cdcf38a7ccabd8f47",
-          "message": "fix(es/loader): Prefer ESM (#3089)\n\nswc_ecma_loader:\r\n - Check for `module` field and prefer it over `main`.",
-          "timestamp": "2021-12-21T21:39:35+09:00",
-          "tree_id": "73065fe01982810e5bb5cb51d74f4e785fb03267",
-          "url": "https://github.com/swc-project/swc/commit/ba2563f59ed819e67a56e39cdcf38a7ccabd8f47"
-        },
-        "date": 1640092992116,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 216390385,
-            "range": "± 14649968",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 185160047,
-            "range": "± 13503985",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 187724716,
-            "range": "± 19813565",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 172649718,
-            "range": "± 13651751",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 171821453,
-            "range": "± 15037310",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 172426342,
-            "range": "± 14886998",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 237646080,
-            "range": "± 20946292",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 217306388,
-            "range": "± 16446117",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 791618,
-            "range": "± 118346",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 877309,
             "range": "± 183673",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d9dc2b99dde69792db4f5a31ffc983f8b04c0bef",
+          "message": "fix(swc): Respect `jsc.experimental.keepImportAssertions` (#3352)\n\nswc:\r\n - Fix `Merge` impl of `JscExperimental`.",
+          "timestamp": "2022-01-24T22:06:17+09:00",
+          "tree_id": "25864a1bee589f5f329c7435a207a931d530c942",
+          "url": "https://github.com/swc-project/swc/commit/d9dc2b99dde69792db4f5a31ffc983f8b04c0bef"
+        },
+        "date": 1643032195320,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 172500316,
+            "range": "± 23436148",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 177918007,
+            "range": "± 23424241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 173817083,
+            "range": "± 27786419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 172128747,
+            "range": "± 24475777",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 179123094,
+            "range": "± 31227440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 170206020,
+            "range": "± 14019379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 241767390,
+            "range": "± 25095080",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 233953699,
+            "range": "± 41430746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 808104,
+            "range": "± 229208",
             "unit": "ns/iter"
           }
         ]
