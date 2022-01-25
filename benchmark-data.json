@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1643100620952,
+  "lastUpdate": 1643101243811,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ae591a1fd5f395af05fbb6d62eef58290516f395",
-          "message": "feat(es/diff): \bInitialize a diff tool for ecmascript (#3101)\n\nswc_ecma_diff:\r\n - Initialize the project.",
-          "timestamp": "2021-12-23T22:01:37+09:00",
-          "tree_id": "dd8fb9f6747163c01a5e58a8b5472d88234a3a52",
-          "url": "https://github.com/swc-project/swc/commit/ae591a1fd5f395af05fbb6d62eef58290516f395"
-        },
-        "date": 1640266818627,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 174448033,
-            "range": "± 11258296",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 143973546,
-            "range": "± 11758044",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 147833385,
-            "range": "± 11380467",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 147568818,
-            "range": "± 12391706",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 145434108,
-            "range": "± 15637529",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 146178699,
-            "range": "± 21307675",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 197547867,
-            "range": "± 21190664",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 182434821,
-            "range": "± 20230660",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 641499,
-            "range": "± 104475",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 683402,
             "range": "± 13588",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1a8db61943d022bcbed583eb3562510d1ed727c",
+          "message": "fix(es/block-scoping): Pop scope correctly on early returns (#3360)\n\nswc_ecma_transforms_compat:\r\n - `block_scoping`: Pop scope even on fast-path.",
+          "timestamp": "2022-01-25T17:22:58+09:00",
+          "tree_id": "1436a03d21b508f64094fffd5a39f5d16ea7cfc5",
+          "url": "https://github.com/swc-project/swc/commit/b1a8db61943d022bcbed583eb3562510d1ed727c"
+        },
+        "date": 1643101243803,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 165310419,
+            "range": "± 7810516",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 171572385,
+            "range": "± 6212668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 171283702,
+            "range": "± 7891605",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 168775447,
+            "range": "± 6125598",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 168420666,
+            "range": "± 6118174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 151407731,
+            "range": "± 5415726",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 212265026,
+            "range": "± 9381383",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 213036611,
+            "range": "± 15250206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 700297,
+            "range": "± 14938",
             "unit": "ns/iter"
           }
         ]
