@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1643367366558,
+  "lastUpdate": 1643371240970,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "43c8cda31a89bfc027ea3948bd9653d97d3fc29c",
-          "message": "fix(es/renamer): Fix renamer (#3139)\n\nswc_ecma_transforms_base:\r\n - `resolver`: Ignore named export with source.\r\n - `hygiene`: Ignore named export with source. (Closes #2924, Closes #3114)\r\n\r\nswc_ecma_minifier:\r\n - Handle `export default` declarations as declaration instead of expressions. (Closes #2717)\r\n - Don't override already-processed identifiers. (Closes #2988)\r\n\r\nswc_bundler:\r\n - Adjust the syntax context for named re-exports.",
-          "timestamp": "2021-12-29T13:44:48+09:00",
-          "tree_id": "3b760da82d4889146b0d5864b518b8bc07502592",
-          "url": "https://github.com/swc-project/swc/commit/43c8cda31a89bfc027ea3948bd9653d97d3fc29c"
-        },
-        "date": 1640755414767,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015                 ",
-            "value": 207250470,
-            "range": "± 30303020",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016                 ",
-            "value": 163815949,
-            "range": "± 15014576",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017                 ",
-            "value": 166661791,
-            "range": "± 21719573",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018                 ",
-            "value": 167368109,
-            "range": "± 16243243",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019                 ",
-            "value": 166690265,
-            "range": "± 17398340",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020                 ",
-            "value": 168417671,
-            "range": "± 22836152",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3                    ",
-            "value": 254001892,
-            "range": "± 28359924",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5                    ",
-            "value": 211666668,
-            "range": "± 22522272",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser                      ",
-            "value": 775046,
-            "range": "± 98814",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 816872,
             "range": "± 17592",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74b433080bf79026fbcb905d7f0fba435822df68",
+          "message": "refactor(es/minifier): Remove unused crates (#3395)",
+          "timestamp": "2022-01-28T20:17:08+09:00",
+          "tree_id": "c90e89e551c7c0529b9e143ee804307cf4ae2a3e",
+          "url": "https://github.com/swc-project/swc/commit/74b433080bf79026fbcb905d7f0fba435822df68"
+        },
+        "date": 1643371240956,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 205566874,
+            "range": "± 17241506",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 208644282,
+            "range": "± 17870922",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 213245865,
+            "range": "± 17654805",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 211290207,
+            "range": "± 14566094",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 205199134,
+            "range": "± 17057751",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 189355016,
+            "range": "± 14046528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 266781437,
+            "range": "± 20587013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 268352162,
+            "range": "± 25641325",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 842697,
+            "range": "± 198776",
             "unit": "ns/iter"
           }
         ]
