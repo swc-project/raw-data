@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1643428596819,
+  "lastUpdate": 1643433220616,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kwon.ohjoong@gmail.com",
-            "name": "OJ Kwon",
-            "username": "kwonoj"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "72c963662d63338235378d71ee856c782cdeddfe",
-          "message": "refactor(*): Drop unused dependencies (#3138)",
-          "timestamp": "2021-12-29T15:27:51+09:00",
-          "tree_id": "d33d511281d91e415781f8969f9dc674df411164",
-          "url": "https://github.com/swc-project/swc/commit/72c963662d63338235378d71ee856c782cdeddfe"
-        },
-        "date": 1640761363045,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015                 ",
-            "value": 188676774,
-            "range": "± 8328137",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016                 ",
-            "value": 156267524,
-            "range": "± 6687639",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017                 ",
-            "value": 162047722,
-            "range": "± 8771201",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018                 ",
-            "value": 160606236,
-            "range": "± 9422983",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019                 ",
-            "value": 159841147,
-            "range": "± 8813571",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020                 ",
-            "value": 158965335,
-            "range": "± 10560393",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3                    ",
-            "value": 227237015,
-            "range": "± 9452504",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5                    ",
-            "value": 202613333,
-            "range": "± 14406240",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser                      ",
-            "value": 694334,
-            "range": "± 21558",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 801996,
             "range": "± 29401",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cebc5dc148fa4c03a536a841a106955de18b010b",
+          "message": "fix(swc): Run `resolver` before everything (#3400)\n\nswc:\r\n - Use `ts_resolver` for typescript. This is required to handle decorators properly.\r\n - Apply `resolver` before creating custom passes.",
+          "timestamp": "2022-01-29T13:36:34+09:00",
+          "tree_id": "2006637bf6abc5dd8fb42863fc6a43aea94dd969",
+          "url": "https://github.com/swc-project/swc/commit/cebc5dc148fa4c03a536a841a106955de18b010b"
+        },
+        "date": 1643433220610,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 167299557,
+            "range": "± 6761200",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 173849102,
+            "range": "± 9254269",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 173368151,
+            "range": "± 6049541",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 171156875,
+            "range": "± 5490373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 171202429,
+            "range": "± 6486100",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 155711431,
+            "range": "± 6107244",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 216148189,
+            "range": "± 6916842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 214374746,
+            "range": "± 12366653",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 687825,
+            "range": "± 20789",
             "unit": "ns/iter"
           }
         ]
