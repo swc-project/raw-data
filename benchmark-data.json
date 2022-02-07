@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1644250857611,
+  "lastUpdate": 1644253164860,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kwon.ohjoong@gmail.com",
-            "name": "OJ Kwon",
-            "username": "kwonoj"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "92de2c78841ee1dc8b372268690637a19c3f4307",
-          "message": "feat(plugin): Pass serialized ast to a wasm file (#3199)\n\nswc_common:\r\n - Use correct cargo feature for plugin apis.\r\n\r\nswc_plugin:\r\n - Add hidden functions required for memory operations from host.\r\n\r\nswc_plugin_runner:\r\n - Pass serialized AST to a wasm file.",
-          "timestamp": "2022-01-07T15:13:46+09:00",
-          "tree_id": "3956186540b593d56c128d6d23f8fad638b098e8",
-          "url": "https://github.com/swc-project/swc/commit/92de2c78841ee1dc8b372268690637a19c3f4307"
-        },
-        "date": 1641538559680,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 190493879,
-            "range": "± 17550855",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 159922849,
-            "range": "± 19729800",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 161872727,
-            "range": "± 22806201",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 161434842,
-            "range": "± 23373243",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 158540132,
-            "range": "± 18023512",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 157091033,
-            "range": "± 15111271",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 211869049,
-            "range": "± 20829741",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 199285021,
-            "range": "± 28856705",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 697309,
-            "range": "± 126556",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19499,6 +19421,84 @@
             "name": "parser",
             "value": 715559,
             "range": "± 14395",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "9057181+williamtetlow@users.noreply.github.com",
+            "name": "William Tetlow",
+            "username": "williamtetlow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f5e87b66b42a5672e00edcfa22234f1cde79580",
+          "message": "fix(es/compat): Fix legacy decorator pass (#3459)",
+          "timestamp": "2022-02-07T16:11:41Z",
+          "tree_id": "3291e842ebaf140af4a1590478d1e99d97acd2c0",
+          "url": "https://github.com/swc-project/swc/commit/4f5e87b66b42a5672e00edcfa22234f1cde79580"
+        },
+        "date": 1644253164851,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 212259390,
+            "range": "± 11387851",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 226035319,
+            "range": "± 13486402",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 222857563,
+            "range": "± 16528123",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 220786265,
+            "range": "± 18331203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 220337767,
+            "range": "± 12725208",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 192878309,
+            "range": "± 13220187",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 271883110,
+            "range": "± 16672400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 277813152,
+            "range": "± 14981729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 897632,
+            "range": "± 79659",
             "unit": "ns/iter"
           }
         ]
