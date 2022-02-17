@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1645098586648,
+  "lastUpdate": 1645104514634,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "68e90173762feb2aa6744ca46f5d1185a89da271",
-          "message": "fix(es/minifier): Improve minifier (#3350)\n\nswc_ecma_transforms_optimization:\r\n - `expr_simplifier`: Track more changes.\r\n\r\nswc_ecma_minifier:\r\n - Analyze after applying the pure optimizer.\r\n - Preserve access to a variable not in scope.\r\n - `compress`: Remove string literal if it was not a directive.\r\n - `pure/collapse_vars`: Merge vars declared in the first statement into one with initializers if `collapse_vars` and `join_vars` are enabled.\r\n - `unused`: Use `usage_count` instead of `ref_count`.\r\n - `unused`: Fix dropping rule for member expressions.\r\n - `unused`: Fix dropping rule for declarations.\r\n - `hoist_props`: Preserve exported items.",
-          "timestamp": "2022-01-27T15:36:22+09:00",
-          "tree_id": "268b64ea91ebc9ee549370ec1ee7122b0fdd9900",
-          "url": "https://github.com/swc-project/swc/commit/68e90173762feb2aa6744ca46f5d1185a89da271"
-        },
-        "date": 1643267600902,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 164043130,
-            "range": "± 4783828",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 168140715,
-            "range": "± 6407108",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 167996395,
-            "range": "± 7280372",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 166357796,
-            "range": "± 6565469",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 166293443,
-            "range": "± 7754593",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 150859970,
-            "range": "± 4298115",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 211047171,
-            "range": "± 8369242",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 210480133,
-            "range": "± 16330465",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 687375,
-            "range": "± 23567",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19402,6 +19324,82 @@
             "name": "parser",
             "value": 823970,
             "range": "± 27445",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bot@swc.rs",
+            "name": "SWC Bot"
+          },
+          "committer": {
+            "email": "bot@swc.rs",
+            "name": "SWC Bot"
+          },
+          "distinct": true,
+          "id": "a91361eef077f800a5195822ce6247656448717b",
+          "message": "chore: Publish crates",
+          "timestamp": "2022-02-17T12:53:25Z",
+          "tree_id": "f156b085b52506bedbdd252773aaf7de8f3b64cd",
+          "url": "https://github.com/swc-project/swc/commit/a91361eef077f800a5195822ce6247656448717b"
+        },
+        "date": 1645104514629,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 173289317,
+            "range": "± 32358777",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 176449153,
+            "range": "± 42278339",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 151402951,
+            "range": "± 10300957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 173428512,
+            "range": "± 32928698",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 156998167,
+            "range": "± 24816672",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 144611521,
+            "range": "± 9680957",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 198104084,
+            "range": "± 26174465",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 217791429,
+            "range": "± 32691711",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 721077,
+            "range": "± 106482",
             "unit": "ns/iter"
           }
         ]
