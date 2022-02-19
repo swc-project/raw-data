@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1645264383848,
+  "lastUpdate": 1645269338646,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny",
-            "username": "kdy1"
-          },
-          "distinct": true,
-          "id": "c49ffc2c8b8d0e98c994c3c37070aea3347c77bb",
-          "message": "chore: Publish crates",
-          "timestamp": "2022-01-29T12:10:57+09:00",
-          "tree_id": "758283c7f84641764656087980cc8ee7fce6fe3b",
-          "url": "https://github.com/swc-project/swc/commit/c49ffc2c8b8d0e98c994c3c37070aea3347c77bb"
-        },
-        "date": 1643428596812,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 195223201,
-            "range": "± 14120270",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 200705814,
-            "range": "± 10423917",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 199890333,
-            "range": "± 8577128",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 201440931,
-            "range": "± 13107136",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 196300302,
-            "range": "± 12070517",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 178271850,
-            "range": "± 8486637",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 249507094,
-            "range": "± 16237712",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 248320788,
-            "range": "± 16329554",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 801996,
-            "range": "± 29401",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -19382,6 +19304,84 @@
             "name": "parser",
             "value": 845530,
             "range": "± 18277",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd0e952aec427e86d276b51e8f6659de8f9eac94",
+          "message": "perf(es/minifier): Fix performance bug of the mangler (#3633)\n\nswc_ecma_minifier:\r\n - Use a bi-directional hashmap instead of iterating all keys.",
+          "timestamp": "2022-02-19T10:31:54Z",
+          "tree_id": "21269d1d9fab37d70fb9616572e8a5e91e33ee27",
+          "url": "https://github.com/swc-project/swc/commit/fd0e952aec427e86d276b51e8f6659de8f9eac94"
+        },
+        "date": 1645269338637,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "full_es2015",
+            "value": 196743435,
+            "range": "± 8394632",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 202523990,
+            "range": "± 11945451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 202415869,
+            "range": "± 11565782",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 200910909,
+            "range": "± 12728210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 200527210,
+            "range": "± 7240916",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 182834146,
+            "range": "± 6449667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 251337682,
+            "range": "± 10374541",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 249459886,
+            "range": "± 12708855",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 798136,
+            "range": "± 82910",
             "unit": "ns/iter"
           }
         ]
