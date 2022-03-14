@@ -1,0 +1,284 @@
+{
+  "lastUpdate": 1647255630004,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ad13d93f288e54f245b249920d74cfe13d1e969",
+          "message": "fix(common): Don't use `None` as source while generating source maps (#4007)\n\n**Description:**\r\n\r\nI used https://pastcompute.github.io/ScriptMapper/ to dump source map, and found that line/column becomes null if file is `None`. Seems like the rust crate `sourcemap` is mature enough to handle sourcemaps with those entries, but many other sourcemap libraries, including the one used by `@swc/cli` expects non-null value for the line and the column.",
+          "timestamp": "2022-03-14T09:51:51Z",
+          "tree_id": "fe5091a04ca065d60aee6ccfb52667945ca77fa9",
+          "url": "https://github.com/swc-project/swc/commit/0ad13d93f288e54f245b249920d74cfe13d1e969"
+        },
+        "date": 1647255630002,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "base_tr_fixer",
+            "value": 33283,
+            "range": "± 11848",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_tr_resolver_and_hygiene",
+            "value": 143732,
+            "range": "± 51122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2015",
+            "value": 37616,
+            "range": "± 10584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2016",
+            "value": 36517,
+            "range": "± 5479",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2017",
+            "value": 37353,
+            "range": "± 13919",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2018",
+            "value": 37020,
+            "range": "± 15620",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2019",
+            "value": 37371,
+            "range": "± 13676",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2020",
+            "value": 37461,
+            "range": "± 16052",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es3",
+            "value": 36881,
+            "range": "± 8315",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es5",
+            "value": 37102,
+            "range": "± 17954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2015",
+            "value": 181723159,
+            "range": "± 19341728",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 177811118,
+            "range": "± 16595819",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 178253461,
+            "range": "± 15144480",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 178534660,
+            "range": "± 19993234",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 175229531,
+            "range": "± 15650747",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 166167677,
+            "range": "± 15124600",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 239593322,
+            "range": "± 13130503",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 224889871,
+            "range": "± 19540549",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 768611,
+            "range": "± 245845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_ast_node",
+            "value": 192,
+            "range": "± 40",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_serde",
+            "value": 198,
+            "range": "± 37",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_colors",
+            "value": 5838985,
+            "range": "± 4017194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_large",
+            "value": 68228754,
+            "range": "± 96320993",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_clone",
+            "value": 2922367,
+            "range": "± 867665",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span",
+            "value": 5536717,
+            "range": "± 1785317",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span_panic",
+            "value": 5546736,
+            "range": "± 1958430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span",
+            "value": 3688542,
+            "range": "± 1930742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span_panic",
+            "value": 3649537,
+            "range": "± 910879",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "usage_builtin_type",
+            "value": 19971443,
+            "range": "± 11897631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "usage_property",
+            "value": 474928,
+            "range": "± 66955",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed",
+            "value": 178,
+            "range": "± 64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed_clone",
+            "value": 94,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed",
+            "value": 149,
+            "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed_clone",
+            "value": 83,
+            "range": "± 19",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_10",
+            "value": 386,
+            "range": "± 74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_15",
+            "value": 849,
+            "range": "± 327",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_20",
+            "value": 1494,
+            "range": "± 432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_40",
+            "value": 5615,
+            "range": "± 1063",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_5",
+            "value": 125,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_60",
+            "value": 11726,
+            "range": "± 3364",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015",
+            "value": 11315461,
+            "range": "± 2800660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "total",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
