@@ -1,86 +1,8 @@
 {
-  "lastUpdate": 1647945973771,
+  "lastUpdate": 1647948378132,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "doslby@gmail.com",
-            "name": "Bryan Lee",
-            "username": "liby"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "72c9e6ca2b8186c4b297658bec1ce37912898d9f",
-          "message": "fix(es/helpers): Cast the result of the `instanceof` helper to boolean (#3728)\n\nCo-authored-by: Donny/강동윤 <kdy1997.dev@gmail.com>",
-          "timestamp": "2022-02-25T03:22:40Z",
-          "tree_id": "d9b5ad214f7200b09e4fbb6c4a5e43cdd6e5d3dc",
-          "url": "https://github.com/swc-project/swc/commit/72c9e6ca2b8186c4b297658bec1ce37912898d9f"
-        },
-        "date": 1645761990145,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "full_es2015",
-            "value": 199671942,
-            "range": "± 5683289",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 207203668,
-            "range": "± 8813857",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 206282862,
-            "range": "± 8835028",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 203891747,
-            "range": "± 9856196",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 203010386,
-            "range": "± 7413427",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 184116810,
-            "range": "± 7048217",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 255712885,
-            "range": "± 5881191",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 253326357,
-            "range": "± 12258220",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 822443,
-            "range": "± 15499",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -33569,6 +33491,276 @@
             "name": "time_60",
             "value": 15245,
             "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "total",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "154d443c88d7e08bd8a51da190a06a312976c6e2",
+          "message": "fix(es/compat): Fix regression of `es2015` (#4119)",
+          "timestamp": "2022-03-22T10:42:05Z",
+          "tree_id": "805e228c5c6217253edf8d736c5ce029242b7de4",
+          "url": "https://github.com/swc-project/swc/commit/154d443c88d7e08bd8a51da190a06a312976c6e2"
+        },
+        "date": 1647948378122,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "base_tr_fixer",
+            "value": 23088,
+            "range": "± 294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_tr_resolver_and_hygiene",
+            "value": 93285,
+            "range": "± 7914",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2015",
+            "value": 29150,
+            "range": "± 176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2016",
+            "value": 29204,
+            "range": "± 169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2017",
+            "value": 29083,
+            "range": "± 134",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2018",
+            "value": 29137,
+            "range": "± 148",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2019",
+            "value": 29272,
+            "range": "± 138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es2020",
+            "value": 29205,
+            "range": "± 240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es3",
+            "value": 29154,
+            "range": "± 132",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "codegen_es5",
+            "value": 29115,
+            "range": "± 133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2015",
+            "value": 136909880,
+            "range": "± 12517082",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2016",
+            "value": 137966451,
+            "range": "± 4675767",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2017",
+            "value": 136922335,
+            "range": "± 2937399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2018",
+            "value": 136261742,
+            "range": "± 3026893",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2019",
+            "value": 135551381,
+            "range": "± 9877285",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es2020",
+            "value": 121533751,
+            "range": "± 11479601",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es3",
+            "value": 184901245,
+            "range": "± 4463738",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "full_es5",
+            "value": 174610097,
+            "range": "± 5150424",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parser",
+            "value": 568021,
+            "range": "± 8400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_ast_node",
+            "value": 145,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ser_serde",
+            "value": 145,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_colors",
+            "value": 9918974,
+            "range": "± 7044757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "emit_large",
+            "value": 72641554,
+            "range": "± 104596764",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "base_clone",
+            "value": 2928109,
+            "range": "± 627233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span",
+            "value": 4514694,
+            "range": "± 827116",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "fold_span_panic",
+            "value": 4641431,
+            "range": "± 1042031",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span",
+            "value": 3567128,
+            "range": "± 800975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "visit_mut_span_panic",
+            "value": 3686237,
+            "range": "± 862374",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "usage_builtin_type",
+            "value": 15893291,
+            "range": "± 9873473",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "usage_property",
+            "value": 397312,
+            "range": "± 976",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed",
+            "value": 133,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_boxed_clone",
+            "value": 70,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed",
+            "value": 119,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "boxing_unboxed_clone",
+            "value": 63,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_10",
+            "value": 296,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_15",
+            "value": 649,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_20",
+            "value": 1279,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_40",
+            "value": 6729,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_5",
+            "value": 96,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "time_60",
+            "value": 14887,
+            "range": "± 34",
             "unit": "ns/iter"
           },
           {
