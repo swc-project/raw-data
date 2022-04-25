@@ -1,284 +1,8 @@
 {
-  "lastUpdate": 1650909093807,
+  "lastUpdate": 1650912356417,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e19a60aad44318d9752f790c913bf010423e7f7c",
-          "message": "fix(es/compat): Change pass ordering of `es2015` (#4029)\n\n**Description:**\r\n\r\nWe should apply `regenerator` after `block_scoping` because `regenerator` does not know how to handle `const`s.\r\n\r\n**Related issue:**\r\n\r\n - Closes https://github.com/swc-project/swc/issues/3006",
-          "timestamp": "2022-03-15T14:17:03Z",
-          "tree_id": "6ad9715d285c8d9d3517218660a01fefd47fbfd3",
-          "url": "https://github.com/swc-project/swc/commit/e19a60aad44318d9752f790c913bf010423e7f7c"
-        },
-        "date": 1647357020902,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "base_tr_fixer",
-            "value": 27052,
-            "range": "± 447",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "base_tr_resolver_and_hygiene",
-            "value": 109512,
-            "range": "± 20977",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2015",
-            "value": 35737,
-            "range": "± 197",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2016",
-            "value": 35581,
-            "range": "± 208",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2017",
-            "value": 35735,
-            "range": "± 200",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2018",
-            "value": 35746,
-            "range": "± 194",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2019",
-            "value": 36988,
-            "range": "± 1698",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es2020",
-            "value": 35935,
-            "range": "± 740",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es3",
-            "value": 35856,
-            "range": "± 728",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "codegen_es5",
-            "value": 35766,
-            "range": "± 533",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2015",
-            "value": 157494905,
-            "range": "± 9495374",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2016",
-            "value": 159340989,
-            "range": "± 13717754",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2017",
-            "value": 158594116,
-            "range": "± 9152330",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2018",
-            "value": 156516865,
-            "range": "± 5724229",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2019",
-            "value": 155505484,
-            "range": "± 7604364",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es2020",
-            "value": 148719957,
-            "range": "± 12445748",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es3",
-            "value": 213887906,
-            "range": "± 8960061",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "full_es5",
-            "value": 201278553,
-            "range": "± 8295478",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "parser",
-            "value": 663622,
-            "range": "± 19719",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ser_ast_node",
-            "value": 177,
-            "range": "± 2",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "ser_serde",
-            "value": 176,
-            "range": "± 1",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "emit_colors",
-            "value": 13407410,
-            "range": "± 9475344",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "emit_large",
-            "value": 120860895,
-            "range": "± 180720308",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "base_clone",
-            "value": 3518846,
-            "range": "± 592081",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "fold_span",
-            "value": 5399863,
-            "range": "± 575284",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "fold_span_panic",
-            "value": 5542598,
-            "range": "± 395353",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "visit_mut_span",
-            "value": 3737451,
-            "range": "± 445610",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "visit_mut_span_panic",
-            "value": 4048501,
-            "range": "± 627388",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "usage_builtin_type",
-            "value": 19076263,
-            "range": "± 11953119",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "usage_property",
-            "value": 456536,
-            "range": "± 7948",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_boxed",
-            "value": 160,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_boxed_clone",
-            "value": 84,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_unboxed",
-            "value": 145,
-            "range": "± 1",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "boxing_unboxed_clone",
-            "value": 76,
-            "range": "± 0",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_10",
-            "value": 367,
-            "range": "± 4",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_15",
-            "value": 882,
-            "range": "± 60",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_20",
-            "value": 1418,
-            "range": "± 18",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_40",
-            "value": 4909,
-            "range": "± 50",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_5",
-            "value": 120,
-            "range": "± 2",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "time_60",
-            "value": 10338,
-            "range": "± 75",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es2015",
-            "value": 10940108,
-            "range": "± 69489",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "total",
-            "value": 0,
-            "range": "± 0",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -136163,6 +135887,840 @@
             "name": "parse_and_babelify_yui",
             "value": 41666867,
             "range": "± 1222627",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8048597c9ec10fb956de06e6b2de28e621262dd9",
+          "message": "feat(es/optimization): Accept top level mark from simplifiers (#4434)",
+          "timestamp": "2022-04-25T15:31:59Z",
+          "tree_id": "719c16d2d804907d52b7d01dc025ce58de743fcd",
+          "url": "https://github.com/swc-project/swc/commit/8048597c9ec10fb956de06e6b2de28e621262dd9"
+        },
+        "date": 1650912356378,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 1870074613,
+            "range": "± 51800833",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 434324410,
+            "range": "± 10040954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 2286499379,
+            "range": "± 61617968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 101012812,
+            "range": "± 3118536",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 120189261,
+            "range": "± 5024395",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 64563896,
+            "range": "± 801074",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 20666312,
+            "range": "± 565622",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 597435635,
+            "range": "± 16315315",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 617890943,
+            "range": "± 8669561",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 4590920889,
+            "range": "± 181065953",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 812558481,
+            "range": "± 41755609",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 153113225,
+            "range": "± 4793868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 31681,
+            "range": "± 2184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 31279,
+            "range": "± 3427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 31141,
+            "range": "± 881",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 29732,
+            "range": "± 1198",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 29964,
+            "range": "± 1241",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 29599,
+            "range": "± 796",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 30310,
+            "range": "± 983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 31704,
+            "range": "± 1068",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 201181755,
+            "range": "± 6082286",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 181545762,
+            "range": "± 3236576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 151096870,
+            "range": "± 4382683",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 152671369,
+            "range": "± 4064122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 150519565,
+            "range": "± 5618982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 142760417,
+            "range": "± 2813516",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 144542403,
+            "range": "± 7245708",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 143082231,
+            "range": "± 4056157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 596826,
+            "range": "± 30063",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 25647,
+            "range": "± 938",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 103061,
+            "range": "± 3379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of ast node",
+            "value": 149,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 144,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/colors",
+            "value": 69171,
+            "range": "± 2488",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/large",
+            "value": 362235,
+            "range": "± 18069",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/with-parser/colors",
+            "value": 61416,
+            "range": "± 2277",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/codegen/with-parser/large",
+            "value": 606494,
+            "range": "± 28184",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/antd",
+            "value": 1857328969,
+            "range": "± 7751249",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/d3",
+            "value": 473571475,
+            "range": "± 9941359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/echarts",
+            "value": 2282441818,
+            "range": "± 27684866",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/jquery",
+            "value": 104049860,
+            "range": "± 3038969",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/lodash",
+            "value": 127662963,
+            "range": "± 2959168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/moment",
+            "value": 63376362,
+            "range": "± 1003900",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/react",
+            "value": 18775702,
+            "range": "± 299372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/terser",
+            "value": 641094478,
+            "range": "± 30377740",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/three",
+            "value": 626498798,
+            "range": "± 26645330",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/typescript",
+            "value": 4378611033,
+            "range": "± 67197660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/victory",
+            "value": 849449087,
+            "range": "± 53126069",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/minify/libraries/vue",
+            "value": 142919688,
+            "range": "± 1011675",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/clone",
+            "value": 2540409,
+            "range": "± 103856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/visit_mut_span",
+            "value": 2997976,
+            "range": "± 68789",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/visit_mut_span_panic",
+            "value": 3022523,
+            "range": "± 76695",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/fold_span",
+            "value": 4303361,
+            "range": "± 163994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/compare/fold_span_panic",
+            "value": 4716297,
+            "range": "± 214605",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/colors",
+            "value": 22039,
+            "range": "± 1483",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/angular",
+            "value": 11010324,
+            "range": "± 365047",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/backbone",
+            "value": 1464275,
+            "range": "± 54647",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/jquery",
+            "value": 8382388,
+            "range": "± 236836",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/jquery mobile",
+            "value": 13217791,
+            "range": "± 439641",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/mootools",
+            "value": 5970893,
+            "range": "± 232421",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/underscore",
+            "value": 1192411,
+            "range": "± 36706",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/three",
+            "value": 35431341,
+            "range": "± 970109",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/lexer/yui",
+            "value": 6698429,
+            "range": "± 199521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/colors",
+            "value": 38231,
+            "range": "± 2623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/angular",
+            "value": 18344888,
+            "range": "± 547134",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/backbone",
+            "value": 2649202,
+            "range": "± 95176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/jquery",
+            "value": 14177441,
+            "range": "± 324430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/jquery mobile",
+            "value": 22321525,
+            "range": "± 727753",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/mootools",
+            "value": 11297719,
+            "range": "± 477880",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/underscore",
+            "value": 2390473,
+            "range": "± 89861",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/three",
+            "value": 70712408,
+            "range": "± 3454410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/parser/yui",
+            "value": 11693691,
+            "range": "± 367398",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/preset-env/usage/builtin_type",
+            "value": 137588,
+            "range": "± 7399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/preset-env/usage/property",
+            "value": 30913,
+            "range": "± 1121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transforms/base/resolver",
+            "value": 144569,
+            "range": "± 5227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transforms/base/fixer",
+            "value": 137712,
+            "range": "± 5257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transforms/base/hygiene",
+            "value": 340986,
+            "range": "± 13524",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transforms/base/resolver_with_hygiene",
+            "value": 428653,
+            "range": "± 28388",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/module_clone",
+            "value": 107791,
+            "range": "± 11661",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_empty",
+            "value": 122423,
+            "range": "± 10918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_noop_impl_all",
+            "value": 125331,
+            "range": "± 6780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/fold_noop_impl_vec",
+            "value": 114486,
+            "range": "± 6581",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_boxed_clone",
+            "value": 74,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_unboxed_clone",
+            "value": 113,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_boxed",
+            "value": 144,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/boxing_unboxed",
+            "value": 184,
+            "range": "± 8",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/visitor/base-perf/visit_contains_this",
+            "value": 4004,
+            "range": "± 141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 5",
+            "value": 112,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 10",
+            "value": 350,
+            "range": "± 9",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 15",
+            "value": 751,
+            "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 20",
+            "value": 1305,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 40",
+            "value": 4549,
+            "range": "± 108",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "misc/visitors/time-complexity/time 60",
+            "value": 9644,
+            "range": "± 211",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full-target/es2016",
+            "value": 291497,
+            "range": "± 9088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full-target/es2017",
+            "value": 273426,
+            "range": "± 8211",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full-target/es2018",
+            "value": 260756,
+            "range": "± 10140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2020_nullish_coalescing",
+            "value": 130782,
+            "range": "± 6659",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2020_optional_chaining",
+            "value": 161312,
+            "range": "± 7818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2022_class_properties",
+            "value": 163753,
+            "range": "± 7115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2018_object_rest_spread",
+            "value": 125449,
+            "range": "± 3651",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2019_optional_catch_binding",
+            "value": 110157,
+            "range": "± 3926",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2017_async_to_generator",
+            "value": 104221,
+            "range": "± 7584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2016_exponentiation",
+            "value": 122989,
+            "range": "± 8163",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_arrow",
+            "value": 123397,
+            "range": "± 7518",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_block_scoped_fn",
+            "value": 112733,
+            "range": "± 6559",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_block_scoping",
+            "value": 188854,
+            "range": "± 13317",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_classes",
+            "value": 160083,
+            "range": "± 9461",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_computed_props",
+            "value": 92534,
+            "range": "± 7499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_destructuring",
+            "value": 168815,
+            "range": "± 12423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_duplicate_keys",
+            "value": 93823,
+            "range": "± 3836",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_parameters",
+            "value": 118330,
+            "range": "± 5512",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_fn_name",
+            "value": 94687,
+            "range": "± 5169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_for_of",
+            "value": 110677,
+            "range": "± 5147",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_instanceof",
+            "value": 101015,
+            "range": "± 4446",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_shorthand_property",
+            "value": 90309,
+            "range": "± 4616",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_spread",
+            "value": 93218,
+            "range": "± 7037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_sticky_regex",
+            "value": 93585,
+            "range": "± 4971",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es2015_typeof_symbol",
+            "value": 93217,
+            "range": "± 6224",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transform/baseline/base",
+            "value": 78980,
+            "range": "± 4025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transform/baseline/common_reserved_word",
+            "value": 95855,
+            "range": "± 9026",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/transform/baseline/common_typescript",
+            "value": 233379,
+            "range": "± 9163",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es3",
+            "value": 272511,
+            "range": "± 13372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es2015",
+            "value": 705141,
+            "range": "± 25505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es2016",
+            "value": 109447,
+            "range": "± 4645",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es2017",
+            "value": 90326,
+            "range": "± 4532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es2018",
+            "value": 116063,
+            "range": "± 7418",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/target/es2020",
+            "value": 171143,
+            "range": "± 8162",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "babelify-only",
+            "value": 688854,
+            "range": "± 32079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_angular",
+            "value": 69260359,
+            "range": "± 2209982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_backbone",
+            "value": 6777841,
+            "range": "± 239151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_jquery",
+            "value": 45311144,
+            "range": "± 1525441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_jquery_mobile",
+            "value": 91896500,
+            "range": "± 2556803",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_mootools",
+            "value": 38951859,
+            "range": "± 1801584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_underscore",
+            "value": 6344617,
+            "range": "± 219787",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "parse_and_babelify_yui",
+            "value": 43409068,
+            "range": "± 2331658",
             "unit": "ns/iter"
           }
         ]
