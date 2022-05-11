@@ -1,0 +1,230 @@
+{
+  "lastUpdate": 1652246189993,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "kdy1997.dev@gmail.com",
+            "name": "Donny/강동윤",
+            "username": "kdy1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6a97c7bef8a1f846bfe34678fd0714b8fdcb56a5",
+          "message": "fix(es/utils): Fix wrong apis (#4604)\n\n# API Changes\r\n\r\n## `swc_ecma_utils`\r\n\r\n### Renames\r\n\r\n - `find_ids` => `find_pat_ids`\r\n - `prepend` => `prepend_stmt`\r\n - `as_bool` => `cast_to_bool`\r\n - `as_number` => `as_pure_number`\r\n - `as_string` => `cast_to_string`\r\n - (`as_pure_bool`, `cast_to_number` is not renamed)\r\n - `UsageFinder` => `IdentUsageFinder`.\r\n - `IdentFinder` => `IdentRefFinder`.\r\n\r\n## Changes\r\n\r\n - Re-export of `HANDLER` from `swc_common::errors` is removed. Use `swc_common::error::HANDLER` instead.\r\n - Re-export of `Id` from `swc_ecma_ast` is removed. Use `swc_ecma_ast::Id` instead.\r\n - `ExprCtx` is used for apis related to `Expr`.\r\n - `preserve_effects` is now a method of `ExprCtx`. It was a top-level function.\r\n - `extract_side_effects_to` is now a method of `ExprCtx`. It was a top-level function.\r\n - `IdentUsageFinder` (previously `UsageFinder`) now takes `Id` instead of `Ident`.\r\n - `IdentRefFinder` (previously `IdentFinder`) now takes `Id` instead of `Ident`.\r\n - `ExprExt::is_ident_ref_to` is removed.\r\n - `Expr::is_global_ref_to` is added.\r\n - `::id::id` is removed. Use `Ident::to_id()` instead.",
+          "timestamp": "2022-05-11T04:36:22Z",
+          "tree_id": "bedc36b8349cb8e4221a8b050933d4b46dfca32a",
+          "url": "https://github.com/swc-project/swc/commit/6a97c7bef8a1f846bfe34678fd0714b8fdcb56a5"
+        },
+        "date": 1652246189974,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 2531026957,
+            "range": "± 89273428",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 843496401,
+            "range": "± 17376321",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 5184489656,
+            "range": "± 31522854",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 129732811,
+            "range": "± 2648875",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 200195498,
+            "range": "± 1143588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 77904544,
+            "range": "± 1205245",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 23667487,
+            "range": "± 363078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 588474656,
+            "range": "± 8453888",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 893462773,
+            "range": "± 8548681",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 6978563227,
+            "range": "± 109826736",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 1105298553,
+            "range": "± 12346876",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 219399461,
+            "range": "± 4681178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 34706,
+            "range": "± 334",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 34687,
+            "range": "± 408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 34797,
+            "range": "± 250",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 34725,
+            "range": "± 341",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 34817,
+            "range": "± 303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 34727,
+            "range": "± 363",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 34667,
+            "range": "± 293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 34546,
+            "range": "± 437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 244683342,
+            "range": "± 7057679",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 229952261,
+            "range": "± 8695710",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 180749062,
+            "range": "± 4163259",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 180014688,
+            "range": "± 3830084",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 176984493,
+            "range": "± 3279857",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 175536011,
+            "range": "± 3533795",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 176045012,
+            "range": "± 6143706",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 168380754,
+            "range": "± 4434727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 779203,
+            "range": "± 13877",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 50220,
+            "range": "± 1368",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 191823,
+            "range": "± 1040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of ast node",
+            "value": 176,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 180,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
