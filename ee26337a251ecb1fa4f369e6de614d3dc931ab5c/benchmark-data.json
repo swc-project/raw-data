@@ -1,0 +1,230 @@
+{
+  "lastUpdate": 1662628554263,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "austaras@outlook.com",
+            "name": "Austaras",
+            "username": "Austaras"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee26337a251ecb1fa4f369e6de614d3dc931ab5c",
+          "message": "feat(es/minifier): Inline lazily initialized variables (#5737)\n\nSafety:\r\n\r\nFor a function-local variable, an expression with side-effects would be a call, including an indirect one with a member expression.\r\n\r\n - If the call is function-local, it will be analyzed by the analyzer and inliner will not work.\r\n - If the call is not a function-local one, it cannot modify the local variable.",
+          "timestamp": "2022-09-08T08:07:43Z",
+          "tree_id": "0a9df7b1aff583f53863c8d229606fd12d66db27",
+          "url": "https://github.com/swc-project/swc/commit/ee26337a251ecb1fa4f369e6de614d3dc931ab5c"
+        },
+        "date": 1662628554261,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 2427560469,
+            "range": "± 95592189",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 441027633,
+            "range": "± 24794494",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 1830649248,
+            "range": "± 125030888",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 109833528,
+            "range": "± 20131896",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 139351097,
+            "range": "± 17104328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 67277748,
+            "range": "± 6216754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 25694669,
+            "range": "± 5407735",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 338957134,
+            "range": "± 13831031",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 592483684,
+            "range": "± 21653829",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 5016541250,
+            "range": "± 165737084",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 1006448991,
+            "range": "± 43022517",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 165683104,
+            "range": "± 12488859",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 40035,
+            "range": "± 2385",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 39934,
+            "range": "± 2954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 40415,
+            "range": "± 3572",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 39716,
+            "range": "± 1879",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 39630,
+            "range": "± 905",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 39484,
+            "range": "± 458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 40100,
+            "range": "± 2447",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 39582,
+            "range": "± 2492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 225417870,
+            "range": "± 19970477",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 216511857,
+            "range": "± 17355182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 159540881,
+            "range": "± 8217041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 158203601,
+            "range": "± 10776627",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 160646369,
+            "range": "± 10741318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 156744572,
+            "range": "± 13734885",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 164214530,
+            "range": "± 12898739",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 157781896,
+            "range": "± 10355973",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 811887,
+            "range": "± 32611",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 31559,
+            "range": "± 2623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 103851,
+            "range": "± 10463",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of ast node",
+            "value": 214,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 219,
+            "range": "± 2",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
