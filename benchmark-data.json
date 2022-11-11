@@ -1,230 +1,8 @@
 {
-  "lastUpdate": 1668135813609,
+  "lastUpdate": 1668136512656,
   "repoUrl": "https://github.com/swc-project/swc",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "kdy1997.dev@gmail.com",
-            "name": "Donny/강동윤",
-            "username": "kdy1"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f2224132c1f000c560b97675b54cb7914bd444fa",
-          "message": "fix(es/minifier): Prepend vars when dropping vars in a for loop initializer (#5930)\n\n**Description:**\r\n\r\nThe minifier appends initializer of for statements instead of prepending it.\r\n\r\n**Related issue:**\r\n\r\n- https://github.com/vercel/next.js/discussions/30237#discussioncomment-3704795",
-          "timestamp": "2022-09-22T09:18:41Z",
-          "tree_id": "0b315e467229cfc749b3cede31741cca1800009c",
-          "url": "https://github.com/swc-project/swc/commit/f2224132c1f000c560b97675b54cb7914bd444fa"
-        },
-        "date": 1663842549027,
-        "tool": "cargo",
-        "benches": [
-          {
-            "name": "es/full/minify/libraries/antd",
-            "value": 1839240349,
-            "range": "± 69985682",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/d3",
-            "value": 336424706,
-            "range": "± 36909985",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/echarts",
-            "value": 1352596665,
-            "range": "± 40664652",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/jquery",
-            "value": 82057215,
-            "range": "± 7183808",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/lodash",
-            "value": 111604987,
-            "range": "± 4736013",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/moment",
-            "value": 49116017,
-            "range": "± 2527046",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/react",
-            "value": 18055116,
-            "range": "± 739188",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/terser",
-            "value": 269046840,
-            "range": "± 8056548",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/three",
-            "value": 463582526,
-            "range": "± 12873646",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/typescript",
-            "value": 3039091108,
-            "range": "± 80604780",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/victory",
-            "value": 742620229,
-            "range": "± 25338545",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/minify/libraries/vue",
-            "value": 132137103,
-            "range": "± 5092452",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es3",
-            "value": 33234,
-            "range": "± 4901",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es5",
-            "value": 33201,
-            "range": "± 12819",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2015",
-            "value": 32400,
-            "range": "± 861",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2016",
-            "value": 32910,
-            "range": "± 314",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2017",
-            "value": 32934,
-            "range": "± 786",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2018",
-            "value": 32995,
-            "range": "± 1098",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2019",
-            "value": 32916,
-            "range": "± 440",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/codegen/es2020",
-            "value": 33049,
-            "range": "± 361",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es3",
-            "value": 207784985,
-            "range": "± 14864834",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es5",
-            "value": 184630938,
-            "range": "± 9993792",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2015",
-            "value": 148863200,
-            "range": "± 6828661",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2016",
-            "value": 147997796,
-            "range": "± 10225705",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2017",
-            "value": 145120932,
-            "range": "± 11137211",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2018",
-            "value": 147275501,
-            "range": "± 7909737",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2019",
-            "value": 151506221,
-            "range": "± 14046086",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/all/es2020",
-            "value": 149570876,
-            "range": "± 12320651",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/parser",
-            "value": 745020,
-            "range": "± 46917",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/base/fixer",
-            "value": 26551,
-            "range": "± 1398",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "es/full/base/resolver_and_hygiene",
-            "value": 94313,
-            "range": "± 3859",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "serialization of ast node",
-            "value": 211,
-            "range": "± 15",
-            "unit": "ns/iter"
-          },
-          {
-            "name": "serialization of serde",
-            "value": 218,
-            "range": "± 14",
-            "unit": "ns/iter"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -56057,6 +55835,234 @@
             "name": "serialization of serde",
             "value": 211,
             "range": "± 3",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "4567934+alexander-akait@users.noreply.github.com",
+            "name": "Alexander Akait",
+            "username": "alexander-akait"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ec2c021255f36f94352b70070d103e320fefe29b",
+          "message": "perf(css/ast): Use `Atom` for `raw` values (#6401)",
+          "timestamp": "2022-11-11T01:24:11Z",
+          "tree_id": "651048209b62a1fdecfc0deed238bbca80c24f14",
+          "url": "https://github.com/swc-project/swc/commit/ec2c021255f36f94352b70070d103e320fefe29b"
+        },
+        "date": 1668136512640,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/bugs-1",
+            "value": 334786,
+            "range": "± 16748",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 1824535495,
+            "range": "± 35894667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 408326702,
+            "range": "± 26978303",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 1552193114,
+            "range": "± 20086071",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 99772654,
+            "range": "± 1004242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 139744559,
+            "range": "± 7001730",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 60782910,
+            "range": "± 2667101",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 20541130,
+            "range": "± 831642",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 316565708,
+            "range": "± 24688809",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 575697083,
+            "range": "± 27222102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 3270780317,
+            "range": "± 24562878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 798110882,
+            "range": "± 15674171",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 151323074,
+            "range": "± 5163757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 33110,
+            "range": "± 2709",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 33108,
+            "range": "± 1105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 32870,
+            "range": "± 1052",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 33526,
+            "range": "± 832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 33418,
+            "range": "± 604",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 33606,
+            "range": "± 359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 33648,
+            "range": "± 703",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 33647,
+            "range": "± 823",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 189247676,
+            "range": "± 5197430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 180338464,
+            "range": "± 5069777",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 141966737,
+            "range": "± 4502041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 142717290,
+            "range": "± 3849932",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 140641379,
+            "range": "± 4392570",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 139091794,
+            "range": "± 5812591",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 138970966,
+            "range": "± 4446261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 133953990,
+            "range": "± 4780667",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 694599,
+            "range": "± 33529",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 26481,
+            "range": "± 892",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 90863,
+            "range": "± 3283",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of ast node",
+            "value": 213,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 215,
+            "range": "± 2",
             "unit": "ns/iter"
           }
         ]
