@@ -1,0 +1,236 @@
+{
+  "lastUpdate": 1670137191803,
+  "repoUrl": "https://github.com/swc-project/swc",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "justin@ridgewell.name",
+            "name": "Justin Ridgewell",
+            "username": "jridgewell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a203fdb1b62ce2df855421d46905f8b821eeabbd",
+          "message": "fix(common): Fix `BytePos` -> `CharPos` calculations (#6574)\n\n**Description:**\r\n\r\nThis fixes the BytePos -> CharPos calculation necessary for source maps.\r\nThere were a few issues in the old code:\r\n\r\n1. UTF-8 maps 1-3 bytes into 1 UTF-16 char, but 4 bytes into 2 UTF-16 chars\r\n2. The starting offset was not recorded when we reached the end of the `multibyte_chars` iteration\r\n3. The `mappings` can be unordered, meaning we need to restart the UTF-16 offset calculation\r\n\r\n**Related issue:**\r\n\r\n - Closes https://github.com/swc-project/swc/issues/6552.",
+          "timestamp": "2022-12-04T14:52:00+09:00",
+          "tree_id": "d80bb2f5c8ee1c24e77db699a6befebc8b92f13e",
+          "url": "https://github.com/swc-project/swc/commit/a203fdb1b62ce2df855421d46905f8b821eeabbd"
+        },
+        "date": 1670137191801,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "es/full/bugs-1",
+            "value": 433858,
+            "range": "± 60049",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/antd",
+            "value": 2421609627,
+            "range": "± 69302733",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/d3",
+            "value": 471887492,
+            "range": "± 17014566",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/echarts",
+            "value": 2117942431,
+            "range": "± 71712587",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/jquery",
+            "value": 132923529,
+            "range": "± 6559938",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/lodash",
+            "value": 152517116,
+            "range": "± 5581911",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/moment",
+            "value": 84859642,
+            "range": "± 52635634",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/react",
+            "value": 28651895,
+            "range": "± 15209523",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/terser",
+            "value": 463019636,
+            "range": "± 33428381",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/three",
+            "value": 736593634,
+            "range": "± 66658898",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/typescript",
+            "value": 4838105034,
+            "range": "± 148445746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/victory",
+            "value": 1112553848,
+            "range": "± 83094318",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/minify/libraries/vue",
+            "value": 215182264,
+            "range": "± 24983236",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es3",
+            "value": 41999,
+            "range": "± 886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es5",
+            "value": 41891,
+            "range": "± 2310",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2015",
+            "value": 41479,
+            "range": "± 2752",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2016",
+            "value": 41953,
+            "range": "± 5247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2017",
+            "value": 41691,
+            "range": "± 3435",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2018",
+            "value": 43614,
+            "range": "± 25098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2019",
+            "value": 41370,
+            "range": "± 4333",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/codegen/es2020",
+            "value": 42106,
+            "range": "± 6950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es3",
+            "value": 237538178,
+            "range": "± 28711261",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es5",
+            "value": 225625443,
+            "range": "± 17751187",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2015",
+            "value": 179765309,
+            "range": "± 17404803",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2016",
+            "value": 182401069,
+            "range": "± 15335932",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2017",
+            "value": 177936455,
+            "range": "± 15811367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2018",
+            "value": 175847881,
+            "range": "± 19239088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2019",
+            "value": 175094541,
+            "range": "± 17610050",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/all/es2020",
+            "value": 168017276,
+            "range": "± 15066806",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/parser",
+            "value": 873718,
+            "range": "± 35587",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/fixer",
+            "value": 32642,
+            "range": "± 1935",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "es/full/base/resolver_and_hygiene",
+            "value": 117221,
+            "range": "± 3824",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of ast node",
+            "value": 252,
+            "range": "± 13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "serialization of serde",
+            "value": 266,
+            "range": "± 20",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ]
+  }
+}
